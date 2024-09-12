@@ -1,17 +1,60 @@
 package ejecucion;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import logica.Operaciones;
+
+import java.util.Scanner;
+
+import static java.util.Scanner.*;
+
 public class Ejec {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        Scanner Jen4 = new Scanner(System.in);
+
+        int valorUno = 0;
+        int valorDos = 0;
+
+        Operaciones operaciones = new Operaciones(valorUno,valorDos);
+
+        System.out.println("************************");
+        System.out.println("-  1. Suma             -");
+        System.out.println("-  2. Resta            -");
+        System.out.println("-  3. Multiplicación   -");
+        System.out.println("-  4. Divición         -");
+        System.out.println("-  5. Salir            -");
+        System.out.println("************************");
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese una opción:");
+        int opciones = scanner.nextInt();
+
+        switch (opciones) {
+
+            case 1:
+
+                System.out.println("Ingrese valor1:");
+                valorUno = scanner.nextInt();
+                System.out.println("Ingrese valor2:");
+                valorDos = scanner.nextInt();
+
+                int resultsuma= operaciones.suma();
+                System.out.println("La suma es:"+resultsuma);
+
+
         }
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
 }
