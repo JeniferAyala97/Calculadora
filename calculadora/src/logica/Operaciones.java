@@ -19,4 +19,15 @@ public class Operaciones {
         return valorUno+valorDos;
     }
 
-}
+    public int resta (int valorUno,int valorDos) {
+        return valorUno - valorDos;
+    }
+
+    public int multiplicacion (int valorUno,int valorDos){
+        return valorUno*valorDos;
+    }
+
+    public double division (double valorUno,double valorDos){
+        return valorUno/valorDos;
+
+}}
