@@ -7,14 +7,15 @@ public class Operaciones {
 
     //constructores
 
-    public Operaciones(int valorUno, int valorDos) {
+    public Operaciones() {
 
         this.valorUno = valorUno;
         this.valorDos = valorDos;
     }
-    //metodos
+    //todos
 
-    public int suma (){
+    //suma
+    public int suma (int valorUno,int valorDos){
         return valorUno+valorDos;
     }
 
