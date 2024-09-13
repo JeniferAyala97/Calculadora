@@ -5,29 +5,34 @@ public class Operaciones {
     int valorUno;
     int valorDos;
 
+
     //constructores
 
-    public Operaciones() {
+    public Operaciones (int valorUno, int valorDos) {
 
         this.valorUno = valorUno;
         this.valorDos = valorDos;
     }
+
+    public Operaciones() {
+
+    }
     //todos
 
     //suma
-    public int suma (int valorUno,int valorDos){
-        return valorUno+valorDos;
+    public int suma (){
+        return valorUno + valorDos;
     }
 
-    public int resta (int valorUno,int valorDos) {
+    public int resta () {
         return valorUno - valorDos;
     }
 
-    public int multiplicacion (int valorUno,int valorDos){
-        return valorUno*valorDos;
+    public int multiplicacion (){
+        return valorUno * valorDos;
     }
 
-    public double division (double valorUno,double valorDos){
-        return valorUno/valorDos;
+    public double division (){
+        return valorUno / valorDos;
 
 }}

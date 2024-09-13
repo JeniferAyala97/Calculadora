@@ -2,7 +2,6 @@ package ejecucion;
 
 import logica.Operaciones;
 
-import javax.xml.transform.Result;
 import java.util.Scanner;
 
 public class Ejec {
@@ -37,8 +36,10 @@ public class Ejec {
                     int valorUno = scannerJen.nextInt();
                     System.out.println("Ingrese valor B:");
                     int valorDos = scannerJen.nextInt();
-                    Operaciones resultado = new Operaciones();
-                    System.out.println("El resultado es:" + resultado.suma(valorUno, valorDos));
+                    Operaciones resultado = new Operaciones(valorUno,valorDos);
+                    System.out.println("El resultado es:" + resultado.suma());
+
+
 
 
                     scanner.nextLine(); // Captura el salto de línea restante
@@ -54,8 +55,8 @@ public class Ejec {
                     valorUno = scannerJen.nextInt();
                     System.out.println("Ingrese valor B:");
                     valorDos = scannerJen.nextInt();
-                    Operaciones resultado2 = new Operaciones();
-                    System.out.println("El resultado es:" + resultado2.resta(valorUno, valorDos));
+                    Operaciones resultado2 = new Operaciones(valorUno,valorDos);
+                    System.out.println("El resultado es:" + resultado2.resta());
 
                     scanner.nextLine(); // Captura el salto de línea restante
                     scanner.nextLine(); // Espera a que el usuario presione Enter
@@ -69,8 +70,8 @@ public class Ejec {
                     valorUno = scannerJen.nextInt();
                     System.out.println("Ingrese valor B:");
                     valorDos = scannerJen.nextInt();
-                    Operaciones resultado3 = new Operaciones();
-                    System.out.println("El resultado es:" + resultado3.multiplicacion(valorUno, valorDos));
+                    Operaciones resultado3 = new Operaciones(valorUno,valorDos);
+                    System.out.println("El resultado es:" + resultado3.multiplicacion());
 
                     scanner.nextLine(); // Captura el salto de línea restante
                     scanner.nextLine(); // Espera a que el usuario presione Enter
@@ -84,19 +85,19 @@ public class Ejec {
                     valorUno = scannerJen.nextInt();
                     System.out.println("Ingrese valor B:");
                     valorDos = scannerJen.nextInt();
-                    Operaciones resultado4 = new Operaciones();
-                    System.out.println("El resultado es:" + resultado4.division(valorUno, valorDos));
+                    Operaciones resultado4 = new Operaciones(valorUno,valorDos);
+                    System.out.println("El resultado es:" + resultado4.division());
 
                     scanner.nextLine(); // Captura el salto de línea restante
                     scanner.nextLine(); // Espera a que el usuario presione Enter
                     break;
 
                 default:
-                    System.out.println("Opción Invalida");
+                    System.out.println("5. Salir");
             }
 
         }
-            while (opcion != 6) ;
+            while (opcion!=8) ;
             System.out.println("Finalizo");
 
         }
